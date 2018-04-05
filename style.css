@@ -131,7 +131,6 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: #281a41;
-  box-shadow: inset 1px 1px 1em rgb(20,13,32, .9);
   opacity: .75;
   transition: all 200ms ease-in;
   border-bottom: 5px solid #150d22;
@@ -140,20 +139,8 @@ a {
 a:hover {
   opacity: 1;
   transform: scale(1.01);
-  box-shadow: 1px 1px 1em #150d22;
-}
-
-.logo {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin-right: -35px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px;
-  background-color: #38245b;
-  z-index: 5;
-  box-shadow: 3px -1px 1em rgb(21,13,34);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  z-index: 15;
 }
 
 a > .status-light {
@@ -171,6 +158,19 @@ a::before {
   width: 35px;
   right: -20px;
   background-color: rgba(20,13,32,.5);
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: -35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #38245b;
+  z-index: 5;
+  box-shadow: 3px -1px 1em rgb(21,13,34);
 }
 
 .offline-status {
@@ -219,6 +219,7 @@ h3 {
 
 .online {
   background-color: #3d4c26;
+  border-bottom: 6px solid rgba(4,56,18,.3);
 }
 
 @media screen and (max-width:1024px) {
@@ -352,6 +353,3 @@ h3 {
   a::before {
     height: 0;
   }
-
-  .logo
-}
